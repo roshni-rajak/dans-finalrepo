@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170123 13:09:04.357" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="D:\PycharmProjects\dansProject\resource\Home.robot" id="s1" name="Home">
+<test id="s1-t1" name="Home Page Verify">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://spuser5:dans@2016@49.248.12.180:1761</arg>
+<arg>FireFox</arg>
+</arguments>
+<msg timestamp="20170123 13:09:04.509" level="INFO">Opening browser 'FireFox' to base url 'http://spuser5:dans@2016@49.248.12.180:1761'</msg>
+<status status="PASS" endtime="20170123 13:09:18.005" starttime="20170123 13:09:04.509"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170123 13:09:18.257" starttime="20170123 13:09:18.006"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:18.279" starttime="20170123 13:09:18.257"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//h3[contains(.,'News Update')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:18.356" starttime="20170123 13:09:18.279"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//span[contains(.,'Air Traffic Movement')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:18.385" starttime="20170123 13:09:18.357"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//h4[contains(.,'Blog')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:18.413" starttime="20170123 13:09:18.386"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//h4[contains(.,'Suggestions? ')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:18.439" starttime="20170123 13:09:18.414"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20170123 13:09:38.440" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20170123 13:09:38.440" starttime="20170123 13:09:18.440"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>checking</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:38.443" starttime="20170123 13:09:38.442"></status>
+</kw>
+<kw name="Mouse Down" library="Selenium2Library">
+<doc>Simulates pressing the left mouse button on the element specified by `locator`.</doc>
+<arguments>
+<arg>xpath=//h4[contains(.,'Projects')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:38.445" level="INFO">Simulating Mouse Down on element 'xpath=//h4[contains(.,'Projects')]'</msg>
+<status status="PASS" endtime="20170123 13:09:38.940" starttime="20170123 13:09:38.444"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//h4[contains(.,'OHSE Team')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:38.968" starttime="20170123 13:09:38.940"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//span[contains(.,'Featured Video')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:38.997" starttime="20170123 13:09:38.968"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//h4[contains(.,'Connectors')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:39.026" starttime="20170123 13:09:38.998"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//*[@id='WebPartWPQ5']/div[1]/div/div/div/div[1]/div[2]/h4/span</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:39.054" starttime="20170123 13:09:39.027"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//h3[contains(.,'Events Calendar')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:39.083" starttime="20170123 13:09:39.055"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//span[contains(.,'GRP')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:39.113" starttime="20170123 13:09:39.083"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>xpath=//span[contains(.,'Qpulse')]</arg>
+</arguments>
+<status status="PASS" endtime="20170123 13:09:39.141" starttime="20170123 13:09:39.114"></status>
+</kw>
+<status status="PASS" endtime="20170123 13:09:39.142" critical="yes" starttime="20170123 13:09:04.508"></status>
+</test>
+<test id="s1-t2" name="News Update View All">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath =//img[@src='/SiteAssets/images/expand_green_icon.png']</arg>
+</arguments>
+<msg timestamp="20170123 13:09:39.145" level="INFO">Clicking element 'xpath =//img[@src='/SiteAssets/images/expand_green_icon.png']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:39.634" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:39.634" starttime="20170123 13:09:39.354"></status>
+</kw>
+<msg timestamp="20170123 13:09:39.637" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:39.637" starttime="20170123 13:09:39.144"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:39.641" critical="yes" starttime="20170123 13:09:39.143">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t3" name="Add Suggestion">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[@id="Suggestions"]//img[@src='/SiteAssets/images/expand_gray_icon.png']</arg>
+</arguments>
+<msg timestamp="20170123 13:09:39.643" level="INFO">Clicking element 'xpath=//a[@id="Suggestions"]//img[@src='/SiteAssets/images/expand_gray_icon.png']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:40.047" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:40.047" starttime="20170123 13:09:39.806"></status>
+</kw>
+<msg timestamp="20170123 13:09:40.048" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:40.048" starttime="20170123 13:09:39.643"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:40.049" critical="yes" starttime="20170123 13:09:39.642">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t4" name="Oshe Connector Verify">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:40.052" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:40.468" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:40.468" starttime="20170123 13:09:40.183"></status>
+</kw>
+<msg timestamp="20170123 13:09:40.471" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:40.471" starttime="20170123 13:09:40.052"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:40.473" critical="yes" starttime="20170123 13:09:40.051">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t5" name="Project Upload">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:40.476" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:40.847" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:40.847" starttime="20170123 13:09:40.600"></status>
+</kw>
+<msg timestamp="20170123 13:09:40.848" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:40.848" starttime="20170123 13:09:40.476"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:40.849" critical="yes" starttime="20170123 13:09:40.475">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t6" name="GRP-QPLUS-CONTACT">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:40.851" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:41.210" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:41.210" starttime="20170123 13:09:40.966"></status>
+</kw>
+<msg timestamp="20170123 13:09:41.211" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:41.211" starttime="20170123 13:09:40.851"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:41.212" critical="yes" starttime="20170123 13:09:40.851">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t7" name="Strategy Upload">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:41.215" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:41.580" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:41.580" starttime="20170123 13:09:41.333"></status>
+</kw>
+<msg timestamp="20170123 13:09:41.581" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:41.581" starttime="20170123 13:09:41.214"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:41.582" critical="yes" starttime="20170123 13:09:41.214">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t8" name="Add Blog Post">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:41.584" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:42.066" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:42.067" starttime="20170123 13:09:41.703"></status>
+</kw>
+<msg timestamp="20170123 13:09:42.068" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:42.068" starttime="20170123 13:09:41.584"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:42.068" critical="yes" starttime="20170123 13:09:41.583">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t9" name="Delete Blog Post">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:42.071" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:42.435" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:42.435" starttime="20170123 13:09:42.191"></status>
+</kw>
+<msg timestamp="20170123 13:09:42.436" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:42.436" starttime="20170123 13:09:42.071"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:42.437" critical="yes" starttime="20170123 13:09:42.070">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t10" name="Delete Suggestion">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@aria-label='Open the Settings menu']</arg>
+</arguments>
+<msg timestamp="20170123 13:09:42.440" level="INFO">Clicking element 'xpath=//button[@aria-label='Open the Settings menu']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:42.763" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:42.764" starttime="20170123 13:09:42.465"></status>
+</kw>
+<msg timestamp="20170123 13:09:42.764" level="FAIL">ValueError: Element locator 'xpath=//button[@aria-label='Open the Settings menu']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170123 13:09:42.764" starttime="20170123 13:09:42.440"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:42.765" critical="yes" starttime="20170123 13:09:42.439">ValueError: Element locator 'xpath=//button[@aria-label='Open the Settings menu']' did not match any elements.</status>
+</test>
+<test id="s1-t11" name="Footer Verify">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:42.768" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:43.233" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:43.233" starttime="20170123 13:09:42.898"></status>
+</kw>
+<msg timestamp="20170123 13:09:43.234" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:43.234" starttime="20170123 13:09:42.767"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:43.235" critical="yes" starttime="20170123 13:09:42.766">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t12" name="FooterContact">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:43.238" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170123 13:09:43.645" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170123 13:09:43.645" starttime="20170123 13:09:43.376"></status>
+</kw>
+<msg timestamp="20170123 13:09:43.646" level="FAIL">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170123 13:09:43.646" starttime="20170123 13:09:43.238"></status>
+</kw>
+<status status="FAIL" endtime="20170123 13:09:43.647" critical="yes" starttime="20170123 13:09:43.237">WebDriverException: Message: UnknownError: Cannot press more then one button or an already pressed button.'UnknownError: Cannot press more then one button or an already pressed button.' when calling method: [wdIMouse::click]
+Stacktrace:
+    at WebElement.clickElement (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12088)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/users/roshni/appdata/local/temp/tmpyiinqn/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t13" name="SiteMap">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]</arg>
+</arguments>
+<msg timestamp="20170123 13:09:43.650" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.

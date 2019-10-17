@@ -1,0 +1,1741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170216 12:00:25.737" generator="Robot 3.0 (Python 2.7.12 on win32)">
+<suite source="D:\PycharmProjects\dansProject\Test\dansMasterTest.robot" id="s1" name="dansMasterTest">
+<test id="s1-t1" name="Verify User login">
+<kw name="User login" library="Login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://spuser5:dans@2016@spdc:1761</arg>
+<arg>FireFox</arg>
+</arguments>
+<msg timestamp="20170216 12:00:29.268" level="INFO">Opening browser 'FireFox' to base url 'http://spuser5:dans@2016@spdc:1761'</msg>
+<status status="PASS" endtime="20170216 12:00:52.095" starttime="20170216 12:00:29.267"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170216 12:00:52.231" starttime="20170216 12:00:52.096"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:00:52.231" starttime="20170216 12:00:29.267"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20170216 12:00:52.231" critical="yes" starttime="20170216 12:00:29.266"></status>
+</test>
+<test id="s1-t2" name="Home Page Verification">
+<kw name="Home Page Verify" library="Home">
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:00:52.432" starttime="20170216 12:00:52.233"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text NewsUpdate}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:00:58.532" starttime="20170216 12:00:52.433"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text AirTraffic}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:00:58.558" starttime="20170216 12:00:58.532"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text Blog}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:00:58.582" starttime="20170216 12:00:58.558"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text Suggestion}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:00:58.606" starttime="20170216 12:00:58.583"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20170216 12:01:18.606" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20170216 12:01:18.606" starttime="20170216 12:00:58.606"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text ProjectUpdate}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.657" starttime="20170216 12:01:18.607"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text OHSETeam}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.684" starttime="20170216 12:01:18.657"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text FeaturedVideo}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.713" starttime="20170216 12:01:18.685"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text Connectors}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.742" starttime="20170216 12:01:18.714"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text dansStrategy}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.767" starttime="20170216 12:01:18.742"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text EventCalendar}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.794" starttime="20170216 12:01:18.767"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text GRP}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.820" starttime="20170216 12:01:18.795"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${Text Qpulse}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:18.848" starttime="20170216 12:01:18.820"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:01:18.848" starttime="20170216 12:00:52.233"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:01:18.849" critical="yes" starttime="20170216 12:00:52.232"></status>
+</test>
+<test id="s1-t3" name="Home Page NewsUpdate Redirect">
+<kw name="News Update View All" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${ViewAll NewsUpdate}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:18.851" level="INFO">Clicking element 'xpath=//img[@src='/SiteAssets/images/expand_green_icon.png']'.</msg>
+<status status="PASS" endtime="20170216 12:01:19.133" starttime="20170216 12:01:18.850"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${MediaCenter Heading}</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:01:24.021" starttime="20170216 12:01:19.134"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:24.022" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:24.305" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:24.306" starttime="20170216 12:01:24.076"></status>
+</kw>
+<msg timestamp="20170216 12:01:24.308" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:24.309" starttime="20170216 12:01:24.021"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:24.309" starttime="20170216 12:01:18.850"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:24.309" critical="yes" starttime="20170216 12:01:18.849">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpquodvo/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t4" name="User Site Suggestion Verification">
+<kw name="Add Suggestion" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Suggestion Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:24.313" level="INFO">Clicking element 'xpath=//a[@id="Suggestions"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:24.615" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:24.615" starttime="20170216 12:01:24.344"></status>
+</kw>
+<msg timestamp="20170216 12:01:24.616" level="FAIL">ValueError: Element locator 'xpath=//a[@id="Suggestions"]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:01:24.616" starttime="20170216 12:01:24.312"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:24.616" starttime="20170216 12:01:24.311"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:24.617" critical="yes" starttime="20170216 12:01:24.310">ValueError: Element locator 'xpath=//a[@id="Suggestions"]' did not match any elements.</status>
+</test>
+<test id="s1-t5" name="Browser Close">
+<kw name="Close BrowserWindow" library="Login">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170216 12:01:24.801" starttime="20170216 12:01:24.619"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:01:24.802" starttime="20170216 12:01:24.619"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:01:24.802" critical="yes" starttime="20170216 12:01:24.618"></status>
+</test>
+<test id="s1-t6" name="Admin Site Load Verification">
+<kw name="AdminUser login" library="Login">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://spuser1:dans@2016@spdc:1761</arg>
+<arg>FireFox</arg>
+</arguments>
+<msg timestamp="20170216 12:01:24.804" level="INFO">Opening browser 'FireFox' to base url 'http://spuser1:dans@2016@spdc:1761'</msg>
+<status status="PASS" endtime="20170216 12:01:35.754" starttime="20170216 12:01:24.804"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170216 12:01:35.986" starttime="20170216 12:01:35.755"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:01:35.987" starttime="20170216 12:01:24.803"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:01:35.987" critical="yes" starttime="20170216 12:01:24.802"></status>
+</test>
+<test id="s1-t7" name="OSHE and Connector Verification">
+<kw name="Oshe Connector Verify" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:35.989" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:36.355" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:36.356" starttime="20170216 12:01:36.087"></status>
+</kw>
+<msg timestamp="20170216 12:01:36.357" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:36.357" starttime="20170216 12:01:35.989"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:36.357" starttime="20170216 12:01:35.989"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:36.357" critical="yes" starttime="20170216 12:01:35.988">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t8" name="Project Update Upload Verification">
+<kw name="Project Upload" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:36.359" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:36.707" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:36.707" starttime="20170216 12:01:36.432"></status>
+</kw>
+<msg timestamp="20170216 12:01:36.709" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:36.709" starttime="20170216 12:01:36.359"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:36.709" starttime="20170216 12:01:36.359"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:36.710" critical="yes" starttime="20170216 12:01:36.358">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t9" name="Verification GPR-QPLUS-dansContact">
+<kw name="GRP-QPLUS-CONTACT" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:36.713" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:37.190" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:37.190" starttime="20170216 12:01:36.863"></status>
+</kw>
+<msg timestamp="20170216 12:01:37.191" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:37.192" starttime="20170216 12:01:36.712"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:37.192" starttime="20170216 12:01:36.711"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:37.192" critical="yes" starttime="20170216 12:01:36.710">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t10" name="dans Strategy Verification">
+<kw name="Strategy Upload" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:37.194" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:37.558" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:37.559" starttime="20170216 12:01:37.253"></status>
+</kw>
+<msg timestamp="20170216 12:01:37.560" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:37.560" starttime="20170216 12:01:37.194"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:37.560" starttime="20170216 12:01:37.193"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:37.560" critical="yes" starttime="20170216 12:01:37.193">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t11" name="EmployeeCorner Page Verification">
+<kw name="Verify Employee Corner" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:37.562" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:37.879" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:37.879" starttime="20170216 12:01:37.619"></status>
+</kw>
+<msg timestamp="20170216 12:01:37.880" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:37.880" starttime="20170216 12:01:37.562"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:37.880" starttime="20170216 12:01:37.562"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:37.881" critical="yes" starttime="20170216 12:01:37.561">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t12" name="Verify Add EmployeeEvent">
+<kw name="EmployeeEvent Add" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:37.883" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:38.193" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:38.194" starttime="20170216 12:01:37.932"></status>
+</kw>
+<msg timestamp="20170216 12:01:38.195" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:38.195" starttime="20170216 12:01:37.882"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:38.195" starttime="20170216 12:01:37.882"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:38.195" critical="yes" starttime="20170216 12:01:37.881">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t13" name="Verify Delete EmployeeEvent">
+<kw name="EmployeeEvent Delete" library="EmployeeCorner">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20170216 12:01:58.222" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20170216 12:01:58.222" starttime="20170216 12:01:38.222"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Event EditLink}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:58.223" level="INFO">Clicking element 'xpath=//a[@title='Edit this list using Quick Edit mode.']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:58.537" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:58.537" starttime="20170216 12:01:58.258"></status>
+</kw>
+<msg timestamp="20170216 12:01:58.538" level="FAIL">ValueError: Element locator 'xpath=//a[@title='Edit this list using Quick Edit mode.']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:01:58.538" starttime="20170216 12:01:58.222"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:58.538" starttime="20170216 12:01:38.221"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:58.539" critical="yes" starttime="20170216 12:01:38.196">ValueError: Element locator 'xpath=//a[@title='Edit this list using Quick Edit mode.']' did not match any elements.</status>
+</test>
+<test id="s1-t14" name="Employee Event ErrorMessage Verify">
+<kw name="EmployeeEvent Page" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:01:58.541" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:01:58.859" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:01:58.859" starttime="20170216 12:01:58.593"></status>
+</kw>
+<msg timestamp="20170216 12:01:58.860" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:01:58.861" starttime="20170216 12:01:58.540"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:58.861" starttime="20170216 12:01:58.540"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:01:58.861" critical="yes" starttime="20170216 12:01:58.539">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t15" name="Discount Add Verification">
+<kw name="Discount Add" library="EmployeeCorner">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<msg timestamp="20170216 12:02:28.863" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" endtime="20170216 12:02:28.863" starttime="20170216 12:01:58.863"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:28.864" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:29.215" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:29.215" starttime="20170216 12:02:28.936"></status>
+</kw>
+<msg timestamp="20170216 12:02:29.217" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:29.217" starttime="20170216 12:02:28.864"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:29.217" starttime="20170216 12:01:58.862"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:29.217" critical="yes" starttime="20170216 12:01:58.862">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t16" name="NewsUpdate discount Verification">
+<kw name="Verify News update" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:29.220" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:29.603" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:29.603" starttime="20170216 12:02:29.276"></status>
+</kw>
+<msg timestamp="20170216 12:02:29.604" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:29.604" starttime="20170216 12:02:29.219"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:29.604" starttime="20170216 12:02:29.219"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:29.604" critical="yes" starttime="20170216 12:02:29.218">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t17" name="Delete Discount Verification">
+<kw name="Delete Discount Verify" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:29.606" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:29.939" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:29.939" starttime="20170216 12:02:29.660"></status>
+</kw>
+<msg timestamp="20170216 12:02:29.940" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:29.940" starttime="20170216 12:02:29.606"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:29.940" starttime="20170216 12:02:29.606"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:29.941" critical="yes" starttime="20170216 12:02:29.605">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t18" name="Staff Add Verification">
+<kw name="Staff Update Verify" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:29.943" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:30.253" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:30.253" starttime="20170216 12:02:29.991"></status>
+</kw>
+<msg timestamp="20170216 12:02:30.254" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:30.254" starttime="20170216 12:02:29.942"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:30.254" starttime="20170216 12:02:29.942"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:30.255" critical="yes" starttime="20170216 12:02:29.941">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t19" name="Staff Delete Verification">
+<kw name="Staff Update Delete" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:30.257" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:30.559" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:30.560" starttime="20170216 12:02:30.301"></status>
+</kw>
+<msg timestamp="20170216 12:02:30.561" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:30.561" starttime="20170216 12:02:30.256"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:30.561" starttime="20170216 12:02:30.256"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:30.561" critical="yes" starttime="20170216 12:02:30.255">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t20" name="Employee Handbook Verification">
+<kw name="EmployeeHandBook Upload" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:30.563" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:30.862" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:30.862" starttime="20170216 12:02:30.610"></status>
+</kw>
+<msg timestamp="20170216 12:02:30.863" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:30.863" starttime="20170216 12:02:30.563"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:30.863" starttime="20170216 12:02:30.563"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:30.864" critical="yes" starttime="20170216 12:02:30.562">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t21" name="Induction Pack Verification">
+<kw name="InductionPack Upload" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${InductionPack Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:30.866" level="INFO">Clicking element 'xpath=//div[@class="triangle_bottomright"]//a[@href="/EmployeeCorner/Pages/InductionPack.aspx"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:31.161" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:31.161" starttime="20170216 12:02:30.890"></status>
+</kw>
+<msg timestamp="20170216 12:02:31.162" level="FAIL">ValueError: Element locator 'xpath=//div[@class="triangle_bottomright"]//a[@href="/EmployeeCorner/Pages/InductionPack.aspx"]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:02:31.162" starttime="20170216 12:02:30.865"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:31.162" starttime="20170216 12:02:30.865"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:31.162" critical="yes" starttime="20170216 12:02:30.864">ValueError: Element locator 'xpath=//div[@class="triangle_bottomright"]//a[@href="/EmployeeCorner/Pages/InductionPack.aspx"]' did not match any elements.</status>
+</test>
+<test id="s1-t22" name="Health And Insurance Policy Verification">
+<kw name="Health And Insurance" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:31.165" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:31.534" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:31.534" starttime="20170216 12:02:31.211"></status>
+</kw>
+<msg timestamp="20170216 12:02:31.535" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:31.535" starttime="20170216 12:02:31.164"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:31.536" starttime="20170216 12:02:31.164"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:31.536" critical="yes" starttime="20170216 12:02:31.163">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t23" name="New To Dubai Handbook verification">
+<kw name="New to Dubai handbook Verify" library="EmployeeCorner">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${New to Dubai Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:31.538" level="INFO">Clicking element 'xpath=//div[@class="triangle_bottomright"]//a[@href="/EmployeeCorner/NewtoDubaiHandBook/New to Dubai Handbook.pdf"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:31.832" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:31.832" starttime="20170216 12:02:31.570"></status>
+</kw>
+<msg timestamp="20170216 12:02:31.833" level="FAIL">ValueError: Element locator 'xpath=//div[@class="triangle_bottomright"]//a[@href="/EmployeeCorner/NewtoDubaiHandBook/New to Dubai Handbook.pdf"]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:02:31.833" starttime="20170216 12:02:31.537"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:31.833" starttime="20170216 12:02:31.537"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:31.834" critical="yes" starttime="20170216 12:02:31.536">ValueError: Element locator 'xpath=//div[@class="triangle_bottomright"]//a[@href="/EmployeeCorner/NewtoDubaiHandBook/New to Dubai Handbook.pdf"]' did not match any elements.</status>
+</test>
+<test id="s1-t24" name="Blog add Verification">
+<kw name="Add Blog Post" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:31.836" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:32.148" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:32.148" starttime="20170216 12:02:31.891"></status>
+</kw>
+<msg timestamp="20170216 12:02:32.149" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:32.149" starttime="20170216 12:02:31.835"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:32.150" starttime="20170216 12:02:31.835"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:32.150" critical="yes" starttime="20170216 12:02:31.834">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t25" name="Blog Delete Verification">
+<kw name="Delete Blog Post" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:32.152" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:02:32.453" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:02:32.453" starttime="20170216 12:02:32.202"></status>
+</kw>
+<msg timestamp="20170216 12:02:32.454" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:02:32.454" starttime="20170216 12:02:32.151"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:32.454" starttime="20170216 12:02:32.151"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:02:32.455" critical="yes" starttime="20170216 12:02:32.150">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t26" name="Delete Suggestion Admin Site">
+<kw name="Delete Suggestion" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${HomeSetting Menu}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:32.457" level="INFO">Clicking element 'xpath=//button[@aria-label='Open the Settings menu']'.</msg>
+<status status="PASS" endtime="20170216 12:02:32.647" starttime="20170216 12:02:32.456"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${HomeSite content}</arg>
+</arguments>
+<msg timestamp="20170216 12:02:32.649" level="INFO">Clicking element 'xpath=//a[@aria-label='Site contents']'.</msg>
+<status status="PASS" endtime="20170216 12:02:32.836" starttime="20170216 12:02:32.648"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:02.837" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:02.837" starttime="20170216 12:02:32.836"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SuggestionList Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:02.838" level="INFO">Clicking element 'xpath=//a[@title='suggestionList']'.</msg>
+<status status="PASS" endtime="20170216 12:03:03.078" starttime="20170216 12:03:02.837"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:07.079" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:07.079" starttime="20170216 12:03:03.079"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SuggList EditLink}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:07.080" level="INFO">Clicking element 'xpath=//a[@class='ms-heroCommandLink']'.</msg>
+<status status="PASS" endtime="20170216 12:03:07.297" starttime="20170216 12:03:07.080"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:14.298" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:14.298" starttime="20170216 12:03:07.298"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=.//*[@id='spgridcontainer_WPQ2_leftpane_mainTable']/tbody/tr[2]/td[1]</arg>
+</arguments>
+<msg timestamp="20170216 12:03:14.299" level="INFO">Clicking element 'xpath=.//*[@id='spgridcontainer_WPQ2_leftpane_mainTable']/tbody/tr[2]/td[1]'.</msg>
+<status status="PASS" endtime="20170216 12:03:14.770" starttime="20170216 12:03:14.299"></status>
+</kw>
+<kw name="Open Context Menu" library="Selenium2Library">
+<doc>Opens context menu on element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=.//*[@id='spgridcontainer_WPQ2_leftpane_mainTable']/tbody/tr[2]/td[1]</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:03:15.460" starttime="20170216 12:03:14.771"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Suggestion DeleteButton}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:15.461" level="INFO">Clicking element 'xpath=//span[@class="ms-core-menu-title"]'.</msg>
+<status status="PASS" endtime="20170216 12:03:16.015" starttime="20170216 12:03:15.461"></status>
+</kw>
+<kw name="Choose Ok On Next Confirmation" library="Selenium2Library">
+<doc>Undo the effect of using keywords `Choose Cancel On Next Confirmation`. Note</doc>
+<status status="PASS" endtime="20170216 12:03:16.016" starttime="20170216 12:03:16.015"></status>
+</kw>
+<kw name="Confirm Action" library="Selenium2Library">
+<doc>Dismisses currently shown confirmation dialog and returns it's message.</doc>
+<status status="PASS" endtime="20170216 12:03:16.447" starttime="20170216 12:03:16.016"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:03:16.447" starttime="20170216 12:02:32.456"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:03:16.447" critical="yes" starttime="20170216 12:02:32.455"></status>
+</test>
+<test id="s1-t27" name="Footer Verification">
+<kw name="Footer Verify" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:16.450" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:03:16.792" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:03:16.792" starttime="20170216 12:03:16.529"></status>
+</kw>
+<msg timestamp="20170216 12:03:16.793" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:03:16.793" starttime="20170216 12:03:16.450"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:03:16.793" starttime="20170216 12:03:16.449"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:03:16.794" critical="yes" starttime="20170216 12:03:16.448">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t28" name="Footer Contact Detail Verification">
+<kw name="FooterContact" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:16.796" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:03:17.084" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:03:17.085" starttime="20170216 12:03:16.854"></status>
+</kw>
+<msg timestamp="20170216 12:03:17.085" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:03:17.086" starttime="20170216 12:03:16.795"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:03:17.086" starttime="20170216 12:03:16.795"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:03:17.086" critical="yes" starttime="20170216 12:03:16.794">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t29" name="Footer Site Map Verification">
+<kw name="SiteMap" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:17.088" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:03:17.426" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:03:17.427" starttime="20170216 12:03:17.149"></status>
+</kw>
+<msg timestamp="20170216 12:03:17.428" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:03:17.428" starttime="20170216 12:03:17.088"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:03:17.428" starttime="20170216 12:03:17.087"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:03:17.428" critical="yes" starttime="20170216 12:03:17.087">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpcuhiuq/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t30" name="Rotating Banner Verification">
+<kw name="Rotating Banner Verify" library="Home">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[@id='O365_MainLink_Settings']</arg>
+</arguments>
+<msg timestamp="20170216 12:03:17.430" level="INFO">Clicking element 'xpath=//button[@id='O365_MainLink_Settings']'.</msg>
+<status status="PASS" endtime="20170216 12:03:17.622" starttime="20170216 12:03:17.430"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:21.623" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:21.623" starttime="20170216 12:03:17.623"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${HomeSite content}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:21.624" level="INFO">Clicking element 'xpath=//a[@aria-label='Site contents']'.</msg>
+<status status="PASS" endtime="20170216 12:03:22.078" starttime="20170216 12:03:21.624"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:29.079" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:29.079" starttime="20170216 12:03:22.079"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${RotatingBanner Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:29.080" level="INFO">Clicking element 'xpath=//a[@title='RotatingBannerNew']'.</msg>
+<status status="PASS" endtime="20170216 12:03:29.621" starttime="20170216 12:03:29.080"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:36.622" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:36.622" starttime="20170216 12:03:29.622"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${AddNewBanner Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:36.623" level="INFO">Clicking element 'xpath=//span[contains(.,'new link')]'.</msg>
+<status status="PASS" endtime="20170216 12:03:40.137" starttime="20170216 12:03:36.623"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170216 12:03:44.138" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170216 12:03:44.138" starttime="20170216 12:03:40.138"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${TitleField Rotatingbanner}</arg>
+<arg>FirstImage</arg>
+</arguments>
+<msg timestamp="20170216 12:03:44.139" level="INFO">Typing text 'FirstImage' into text field 'xpath=//input[@title='Title Required Field']'</msg>
+<status status="PASS" endtime="20170216 12:03:44.407" starttime="20170216 12:03:44.139"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${DescriptionField RotatingBanner}</arg>
+<arg>description Only</arg>
+</arguments>
+<msg timestamp="20170216 12:03:44.408" level="INFO">Typing text 'description Only' into text field 'xpath=//textarea[@class='ms-long']'</msg>
+<status status="PASS" endtime="20170216 12:03:45.225" starttime="20170216 12:03:44.407"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${RedirectUrl RotatingBanner}</arg>
+<arg>https://www.google.co.in</arg>
+</arguments>
+<msg timestamp="20170216 12:03:45.226" level="INFO">Typing text 'https://www.google.co.in' into text field 'xpath=//input[@title='ReditectionURL Required Field']'</msg>
+<status status="PASS" endtime="20170216 12:03:45.428" starttime="20170216 12:03:45.225"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${AttachFile RotatingBanner}</arg>
+</arguments>
+<msg timestamp="20170216 12:03:45.428" level="INFO">Clicking element 'xpath=//li[@id="Ribbon.ListForm.Edit.Actions"]//span[@ class="ms-cui-groupBody"]'.</msg>
+<status status="PASS" endtime="20170216 12:03:45.611" starttime="20170216 12:03:45.428"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<msg timestamp="20170216 12:04:15.612" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" endtime="20170216 12:04:15.612" starttime="20170216 12:03:45.611"></status>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<doc>Inputs the `file_path` into file input field found by `locator`.</doc>
+<arguments>
+<arg>${BrowseButton RotatingBanner}</arg>
+<arg>C:\\Users\\Public\\Pictures\\Sample Pictures\\Chrysanthemum.jpg</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:04:15.724" starttime="20170216 12:04:15.613"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${OkButton RotatingBanner}</arg>
+</arguments>
+<msg timestamp="20170216 12:04:15.725" level="INFO">Clicking element 'xpath=//input[@id='attachOKbutton']'.</msg>
+<status status="PASS" endtime="20170216 12:04:15.958" starttime="20170216 12:04:15.725"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170216 12:04:19.958" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170216 12:04:19.958" starttime="20170216 12:04:15.958"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${SaveButton RotatingBanner}</arg>
+</arguments>
+<msg timestamp="20170216 12:04:19.959" level="INFO">Clicking element 'xpath=//input[contains(@name,'toolBarTbl$RightRptControls') and @value='Save']'.</msg>
+<status status="PASS" endtime="20170216 12:04:27.786" starttime="20170216 12:04:19.958"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170216 12:04:28.170" starttime="20170216 12:04:27.786"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://spuser5:dans@2016@spdc:1761</arg>
+<arg>FireFox</arg>
+</arguments>
+<msg timestamp="20170216 12:04:28.171" level="INFO">Opening browser 'FireFox' to base url 'http://spuser5:dans@2016@spdc:1761'</msg>
+<status status="PASS" endtime="20170216 12:04:38.552" starttime="20170216 12:04:28.170"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170216 12:04:38.775" starttime="20170216 12:04:38.552"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7s</arg>
+</arguments>
+<msg timestamp="20170216 12:04:45.776" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20170216 12:04:45.776" starttime="20170216 12:04:38.775"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//li[contains(@data-slide-to,'1')]</arg>
+</arguments>
+<msg timestamp="20170216 12:04:45.777" level="INFO">Clicking element 'xpath=//li[contains(@data-slide-to,'1')]'.</msg>
+<status status="PASS" endtime="20170216 12:04:46.033" starttime="20170216 12:04:45.777"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@class="item active"]//a[@href="https://www.google.co.in"]</arg>
+</arguments>
+<msg timestamp="20170216 12:04:46.034" level="INFO">Clicking element 'xpath=//div[@class="item active"]//a[@href="https://www.google.co.in"]'.</msg>
+<status status="PASS" endtime="20170216 12:04:46.282" starttime="20170216 12:04:46.034"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<msg timestamp="20170216 12:05:16.283" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" endtime="20170216 12:05:16.283" starttime="20170216 12:04:46.283"></status>
+</kw>
+<kw name="Select Window" library="Selenium2Library">
+<doc>Selects the window matching locator and return previous window handle.</doc>
+<arguments>
+<arg>Title=Google</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:05:16.562" starttime="20170216 12:05:16.283"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>Google</arg>
+</arguments>
+<msg timestamp="20170216 12:05:16.593" level="INFO">Page title is 'Google'.</msg>
+<status status="PASS" endtime="20170216 12:05:16.593" starttime="20170216 12:05:16.562"></status>
+</kw>
+<kw name="Select Window" library="Selenium2Library">
+<doc>Selects the window matching locator and return previous window handle.</doc>
+<arguments>
+<arg>Title=Home</arg>
+</arguments>
+<status status="PASS" endtime="20170216 12:05:16.760" starttime="20170216 12:05:16.593"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170216 12:05:16.919" starttime="20170216 12:05:16.760"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:05:16.920" starttime="20170216 12:03:17.430"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:05:16.920" critical="yes" starttime="20170216 12:03:17.429"></status>
+</test>
+<test id="s1-t31" name="Rotating Banner Delete Verification">
+<kw name="Rotating Banner Delete Verify" library="Home">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://spuser1:dans@2016@spdc:1761</arg>
+<arg>FireFox</arg>
+</arguments>
+<msg timestamp="20170216 12:05:16.922" level="INFO">Opening browser 'FireFox' to base url 'http://spuser1:dans@2016@spdc:1761'</msg>
+<status status="PASS" endtime="20170216 12:05:26.803" starttime="20170216 12:05:16.922"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170216 12:05:27.064" starttime="20170216 12:05:26.804"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<msg timestamp="20170216 12:05:57.065" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" endtime="20170216 12:05:57.065" starttime="20170216 12:05:27.065"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Home}</arg>
+</arguments>
+<msg timestamp="20170216 12:05:57.066" level="INFO">Clicking element 'xpath=//div[@id="DeltaTopNavigation"]//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'HOME')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:05:57.521" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:05:57.521" starttime="20170216 12:05:57.176"></status>
+</kw>
+<msg timestamp="20170216 12:05:57.522" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:05:57.522" starttime="20170216 12:05:57.065"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:05:57.523" starttime="20170216 12:05:16.921"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:05:57.523" critical="yes" starttime="20170216 12:05:16.920">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t32" name="Media Center Page Verification">
+<kw name="Media Center Verify" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Media Center}</arg>
+</arguments>
+<msg timestamp="20170216 12:05:57.525" level="INFO">Clicking element 'xpath=//span[@class="additional-background ms-navedit-flyoutArrow"]//span[contains(.,'MEDIA CENTER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:05:57.825" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:05:57.825" starttime="20170216 12:05:57.572"></status>
+</kw>
+<msg timestamp="20170216 12:05:57.826" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:05:57.827" starttime="20170216 12:05:57.525"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:05:57.827" starttime="20170216 12:05:57.524"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:05:57.827" critical="yes" starttime="20170216 12:05:57.524">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t33" name="Media center VideoUpload Verification">
+<kw name="VideoUpload Verify" library="MediaCenter">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7s</arg>
+</arguments>
+<msg timestamp="20170216 12:06:04.829" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" endtime="20170216 12:06:04.829" starttime="20170216 12:05:57.829"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${VideoLibrary Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:04.830" level="INFO">Clicking element 'xpath=//a[@href='/MediaCentre/VideoLibrary/']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:05.282" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:05.283" starttime="20170216 12:06:04.881"></status>
+</kw>
+<msg timestamp="20170216 12:06:05.283" level="FAIL">ValueError: Element locator 'xpath=//a[@href='/MediaCentre/VideoLibrary/']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:06:05.283" starttime="20170216 12:06:04.830"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:05.284" starttime="20170216 12:05:57.828"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:05.284" critical="yes" starttime="20170216 12:05:57.828">ValueError: Element locator 'xpath=//a[@href='/MediaCentre/VideoLibrary/']' did not match any elements.</status>
+</test>
+<test id="s1-t34" name="Media Center Event Add Verification">
+<kw name="Event Add" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Employee Corner}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:05.286" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'EMPLOYEE CORNER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:05.706" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:05.706" starttime="20170216 12:06:05.338"></status>
+</kw>
+<msg timestamp="20170216 12:06:05.707" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:06:05.707" starttime="20170216 12:06:05.286"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:05.708" starttime="20170216 12:06:05.285"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:05.708" critical="yes" starttime="20170216 12:06:05.284">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t35" name="Verification Event on MediaCenter">
+<kw name="Verify Event on MediaCenter" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//div[@id="viewallEvents"]//a[@href="/MediaCentre/Pages/MediaDetails.aspx?pg=mc&amp;type=mediacentreevents"]//img[@src="/SiteAssets/images/icon-view-all.png"]</arg>
+</arguments>
+<msg timestamp="20170216 12:06:05.710" level="INFO">Clicking element 'xpath=//div[@id="viewallEvents"]//a[@href="/MediaCentre/Pages/MediaDetails.aspx?pg=mc&amp;type=mediacentreevents"]//img[@src="/SiteAssets/images/icon-view-all.png"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:06.105" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:06.105" starttime="20170216 12:06:05.734"></status>
+</kw>
+<msg timestamp="20170216 12:06:06.105" level="FAIL">ValueError: Element locator 'xpath=//div[@id="viewallEvents"]//a[@href="/MediaCentre/Pages/MediaDetails.aspx?pg=mc&amp;type=mediacentreevents"]//img[@src="/SiteAssets/images/icon-view-all.png"]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:06:06.106" starttime="20170216 12:06:05.710"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:06.106" starttime="20170216 12:06:05.709"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:06.106" critical="yes" starttime="20170216 12:06:05.708">ValueError: Element locator 'xpath=//div[@id="viewallEvents"]//a[@href="/MediaCentre/Pages/MediaDetails.aspx?pg=mc&amp;type=mediacentreevents"]//img[@src="/SiteAssets/images/icon-view-all.png"]' did not match any elements.</status>
+</test>
+<test id="s1-t36" name="Press Release Add Verififcation">
+<kw name="Press Release Add" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[contains(@id,'Settings')]</arg>
+</arguments>
+<msg timestamp="20170216 12:06:06.108" level="INFO">Clicking element 'xpath=//button[contains(@id,'Settings')]'.</msg>
+<status status="PASS" endtime="20170216 12:06:06.280" starttime="20170216 12:06:06.108"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[contains(.,'Site contents')]</arg>
+</arguments>
+<msg timestamp="20170216 12:06:06.281" level="INFO">Clicking element 'xpath=//a[contains(.,'Site contents')]'.</msg>
+<status status="PASS" endtime="20170216 12:06:06.462" starttime="20170216 12:06:06.280"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20170216 12:06:16.463" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20170216 12:06:16.463" starttime="20170216 12:06:06.462"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PressRelease Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:16.464" level="INFO">Clicking element 'xpath=//div[@class="ms-vl-apptitleouter"]//a[@title='PressRelease']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:16.722" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:16.722" starttime="20170216 12:06:16.509"></status>
+</kw>
+<msg timestamp="20170216 12:06:16.723" level="FAIL">ValueError: Element locator 'xpath=//div[@class="ms-vl-apptitleouter"]//a[@title='PressRelease']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:06:16.723" starttime="20170216 12:06:16.464"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:16.723" starttime="20170216 12:06:06.107"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:16.723" critical="yes" starttime="20170216 12:06:06.107">ValueError: Element locator 'xpath=//div[@class="ms-vl-apptitleouter"]//a[@title='PressRelease']' did not match any elements.</status>
+</test>
+<test id="s1-t37" name="Delete Press Release Verification">
+<kw name="Delete Press Release" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PressRelease EditButton}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:16.725" level="INFO">Clicking element 'xpath=//a[@title='Edit this list using Quick Edit mode.']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:16.955" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:16.956" starttime="20170216 12:06:16.750"></status>
+</kw>
+<msg timestamp="20170216 12:06:16.956" level="FAIL">ValueError: Element locator 'xpath=//a[@title='Edit this list using Quick Edit mode.']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:06:16.956" starttime="20170216 12:06:16.725"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:16.956" starttime="20170216 12:06:16.724"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:16.957" critical="yes" starttime="20170216 12:06:16.724">ValueError: Element locator 'xpath=//a[@title='Edit this list using Quick Edit mode.']' did not match any elements.</status>
+</test>
+<test id="s1-t38" name="New Clip Add Verification">
+<kw name="New Clip Add" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//button[contains(@id,'Settings')]</arg>
+</arguments>
+<msg timestamp="20170216 12:06:16.959" level="INFO">Clicking element 'xpath=//button[contains(@id,'Settings')]'.</msg>
+<status status="PASS" endtime="20170216 12:06:17.117" starttime="20170216 12:06:16.958"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//a[contains(.,'Site contents')]</arg>
+</arguments>
+<msg timestamp="20170216 12:06:17.118" level="INFO">Clicking element 'xpath=//a[contains(.,'Site contents')]'.</msg>
+<status status="PASS" endtime="20170216 12:06:17.290" starttime="20170216 12:06:17.118"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20170216 12:06:21.290" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" endtime="20170216 12:06:21.290" starttime="20170216 12:06:17.290"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${NewsClip Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:21.291" level="INFO">Clicking element 'xpath=//a[@title='News-Clips']'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:21.553" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:21.553" starttime="20170216 12:06:21.338"></status>
+</kw>
+<msg timestamp="20170216 12:06:21.553" level="FAIL">ValueError: Element locator 'xpath=//a[@title='News-Clips']' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:06:21.554" starttime="20170216 12:06:21.291"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:21.554" starttime="20170216 12:06:16.958"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:21.554" critical="yes" starttime="20170216 12:06:16.957">ValueError: Element locator 'xpath=//a[@title='News-Clips']' did not match any elements.</status>
+</test>
+<test id="s1-t39" name="NewsClip Verification On MediaCenter">
+<kw name="NewsClip Verify On MediaCenter" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Media Center}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:21.556" level="INFO">Clicking element 'xpath=//span[@class="additional-background ms-navedit-flyoutArrow"]//span[contains(.,'MEDIA CENTER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:21.830" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:21.830" starttime="20170216 12:06:21.605"></status>
+</kw>
+<msg timestamp="20170216 12:06:21.831" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:06:21.831" starttime="20170216 12:06:21.556"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:21.832" starttime="20170216 12:06:21.555"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:21.832" critical="yes" starttime="20170216 12:06:21.555">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t40" name="Image Library Verification">
+<kw name="Image Library Verify" library="MediaCenter">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Media Center}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:21.834" level="INFO">Clicking element 'xpath=//span[@class="additional-background ms-navedit-flyoutArrow"]//span[contains(.,'MEDIA CENTER')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:22.123" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:22.123" starttime="20170216 12:06:21.891"></status>
+</kw>
+<msg timestamp="20170216 12:06:22.124" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:06:22.124" starttime="20170216 12:06:21.834"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:22.124" starttime="20170216 12:06:21.833"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:22.124" critical="yes" starttime="20170216 12:06:21.833">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t41" name="Library Page Verification">
+<kw name="Library Page Verify" library="Library">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${Library}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:22.127" level="INFO">Clicking element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow']//span[contains(.,'LIBRARY')]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:22.404" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:22.404" starttime="20170216 12:06:22.173"></status>
+</kw>
+<msg timestamp="20170216 12:06:22.405" level="FAIL">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</msg>
+<status status="FAIL" endtime="20170216 12:06:22.405" starttime="20170216 12:06:22.126"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:22.406" starttime="20170216 12:06:22.126"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:22.406" critical="yes" starttime="20170216 12:06:22.125">ElementNotVisibleException: Message: Element is not currently visible and so may not be interacted with
+Stacktrace:
+    at fxdriver.preconditions.visible (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:10092)
+    at DelayedCommand.prototype.checkPreconditions_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12644)
+    at DelayedCommand.prototype.executeInternal_/h (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+    at DelayedCommand.prototype.executeInternal_ (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+    at DelayedCommand.prototype.execute/&lt; (file:///c:/windows/temp/tmpsyyzjf/webdriver-py-profilecopy/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)</status>
+</test>
+<test id="s1-t42" name="Library Link Verification">
+<kw name="Verify Library Page Link" library="Library">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${AirTraffic Link}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:22.408" level="INFO">Clicking element 'xpath=//div[@class="triangle_bottomright"]//a[@ href="/Library/Pages/Air-Traffic-Movements.aspx"]'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:06:22.658" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:06:22.659" starttime="20170216 12:06:22.434"></status>
+</kw>
+<msg timestamp="20170216 12:06:22.659" level="FAIL">ValueError: Element locator 'xpath=//div[@class="triangle_bottomright"]//a[@ href="/Library/Pages/Air-Traffic-Movements.aspx"]' did not match any elements.</msg>
+<status status="FAIL" endtime="20170216 12:06:22.659" starttime="20170216 12:06:22.407"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:22.660" starttime="20170216 12:06:22.407"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:06:22.660" critical="yes" starttime="20170216 12:06:22.406">ValueError: Element locator 'xpath=//div[@class="triangle_bottomright"]//a[@ href="/Library/Pages/Air-Traffic-Movements.aspx"]' did not match any elements.</status>
+</test>
+<test id="s1-t43" name="My Career Page Verification">
+<kw name="My Career" library="MyCareer">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>http://spuser1:dans@2016@spdc:1761</arg>
+<arg>FireFox</arg>
+</arguments>
+<msg timestamp="20170216 12:06:22.662" level="INFO">Opening browser 'FireFox' to base url 'http://spuser1:dans@2016@spdc:1761'</msg>
+<status status="PASS" endtime="20170216 12:06:33.021" starttime="20170216 12:06:22.661"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170216 12:06:33.254" starttime="20170216 12:06:33.021"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20170216 12:06:43.254" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20170216 12:06:43.254" starttime="20170216 12:06:33.254"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${MyCareer}</arg>
+</arguments>
+<msg timestamp="20170216 12:06:43.256" level="INFO">Simulating Mouse Over on element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow dynamic-children']//span[contains(.,'MY CAREER')]'</msg>
+<status status="PASS" endtime="20170216 12:06:43.421" starttime="20170216 12:06:43.255"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${EMIRATI PROGRAMME}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:07:13.926" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:07:13.926" starttime="20170216 12:07:13.612"></status>
+</kw>
+<msg timestamp="20170216 12:07:13.927" level="FAIL">Element 'xpath=//*[@id='zz11_RootAspMenu']/li/ul/li[6]/ul/li[1]/a/span/span' was not visible in 30 seconds</msg>
+<status status="FAIL" endtime="20170216 12:07:13.927" starttime="20170216 12:06:43.422"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:07:13.928" starttime="20170216 12:06:22.661"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:07:13.928" critical="yes" starttime="20170216 12:06:22.660">Element 'xpath=//*[@id='zz11_RootAspMenu']/li/ul/li[6]/ul/li[1]/a/span/span' was not visible in 30 seconds</status>
+</test>
+<test id="s1-t44" name="About Us Verification">
+<kw name="About Us Verify" library="AboutUs">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${AboutUs}</arg>
+</arguments>
+<msg timestamp="20170216 12:07:13.930" level="INFO">Simulating Mouse Over on element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow dynamic-children']//span[contains(.,'ABOUT US')]'</msg>
+<status status="PASS" endtime="20170216 12:07:14.032" starttime="20170216 12:07:13.930"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${About dans}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:07:44.349" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:07:44.349" starttime="20170216 12:07:44.052"></status>
+</kw>
+<msg timestamp="20170216 12:07:44.349" level="FAIL">Element 'xpath=//*[@id='zz11_RootAspMenu']/li/ul/li[1]/ul/li[1]/a/span/span' was not visible in 30 seconds</msg>
+<status status="FAIL" endtime="20170216 12:07:44.350" starttime="20170216 12:07:14.033"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:07:44.350" starttime="20170216 12:07:13.929"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:07:44.350" critical="yes" starttime="20170216 12:07:13.929">Element 'xpath=//*[@id='zz11_RootAspMenu']/li/ul/li[1]/ul/li[1]/a/span/span' was not visible in 30 seconds</status>
+</test>
+<test id="s1-t45" name="Department Verification">
+<kw name="Department Verify" library="Department">
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>${DEPARTMENTS}</arg>
+</arguments>
+<msg timestamp="20170216 12:07:44.352" level="INFO">Simulating Mouse Over on element 'xpath=//span[@class='additional-background ms-navedit-flyoutArrow dynamic-children']//span[contains(.,'DEPARTMENTS')]'</msg>
+<status status="PASS" endtime="20170216 12:07:44.434" starttime="20170216 12:07:44.352"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${AIM}</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170216 12:08:14.915" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170216 12:08:14.916" starttime="20170216 12:08:14.661"></status>
+</kw>
+<msg timestamp="20170216 12:08:14.916" level="FAIL">Element 'xpath=//*[@id='zz11_RootAspMenu']/li/ul/li[2]/ul/li[1]/a' was not visible in 30 seconds</msg>
+<status status="FAIL" endtime="20170216 12:08:14.916" starttime="20170216 12:07:44.435"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:08:14.917" starttime="20170216 12:07:44.351"></status>
+</kw>
+<status status="FAIL" endtime="20170216 12:08:14.917" critical="yes" starttime="20170216 12:07:44.351">Element 'xpath=//*[@id='zz11_RootAspMenu']/li/ul/li[2]/ul/li[1]/a' was not visible in 30 seconds</status>
+</test>
+<test id="s1-t46" name="Browser Admin Close">
+<kw name="Close BrowserWindow" library="Login">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170216 12:08:15.045" starttime="20170216 12:08:14.918"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:08:15.045" starttime="20170216 12:08:14.918"></status>
+</kw>
+<status status="PASS" endtime="20170216 12:08:15.045" critical="yes" starttime="20170216 12:08:14.917"></status>
+</test>
+<status status="FAIL" endtime="20170216 12:08:15.050" starttime="20170216 12:00:25.741"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="39" pass="7">Critical Tests</stat>
+<stat fail="39" pass="7">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Smoke</stat>
+</tag>
+<suite>
+<stat fail="39" id="s1" name="dansMasterTest" pass="7">dansMasterTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
